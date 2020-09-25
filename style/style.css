@@ -1,0 +1,154 @@
+/* Css Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Css Reset */
+h1{
+	font-size: 150%;
+}
+h2{
+	font-size: 200%;
+}
+h3{
+	font-size: 170%;
+}
+h4{
+	font-size: 120%;
+}
+p{
+	font-size: 110%;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	max-height: 30%;
+	padding: 1%;
+	background-color: #66CCFF;
+}
+header nav a {
+	text-decoration: none;
+	border: solid black 1px;
+	background: white;
+}
+.Home-and-About a {
+	text-align: center;
+}
+.main-section{
+	padding: 2%;
+}
+.People{
+	border: solid black 1px;
+} 
+p {
+	padding: 1%;
+}
+div{
+	padding: 1%;
+}
+.index-desc {
+	padding: 1%;
+}
+.Home-and-About{
+	display: flex;
+	justify-content: space-around;
+}
+.Home-and-About .Home{
+	padding: 3%;
+	width: 49%;
+	border: solid black 1px;
+}
+.Home-and-About .About{
+	padding: 3%;
+	width: 49%;
+	border: solid black 1px;
+}
+footer{
+	background: #0D47A1;
+	padding: 2%;
+}
+footer nav {
+	text-align: center;
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 800px){
+	.Home-and-About{
+		display: flex;
+		flex-direction: column;
+		max-width: 99%;
+		text-align: center;
+		margin: 1%;
+		justify-content: center;
+	}
+	.Home-and-About .Home{
+		width: 93%;
+		border: solid black 1px;
+		justify-content: center;
+	}
+	.Home-and-About .About{
+		width: 93%;
+		border: solid black 1px;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 500px){
+	.Home-and-About{
+		display: flex;
+		flex-direction: column;
+		max-width: 99%;
+		text-align: center;
+		margin: 1%;
+	}
+	.Home-and-About .Home{
+		padding: 3%;
+		max-width: 92%;
+		border: solid black 1px;
+	}
+	.Home-and-About .About{
+		padding: 3%;
+		max-width: 92%;
+		border: solid black 1px;
+	}
+}
